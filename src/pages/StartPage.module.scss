@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+  color: #293264;
+}
+
+.title {
+  font-family: 'Karla', sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 7px;
+}
+
+.desc {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.startBtn {
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+  font-weight: 500;
+  padding: 12px 52px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 20px;
+}
+
+.errorMsg {
+  margin-top: 10px;
+  color: rgba(222, 36, 36, 0.919);
+}

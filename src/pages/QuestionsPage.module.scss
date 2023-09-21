@@ -1,0 +1,128 @@
+.questionPageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 350px;
+  @media (min-width: 700px) {
+    max-width: 1200px;
+  }
+}
+
+.questionContainer {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  // margin-right: auto;
+  align-items: start;
+  justify-content: start;
+  margin-right: auto;
+}
+
+.questionTitle {
+  font-weight: 700;
+  font-family: 'Karla', sans-serif, Arial, Helvetica;
+  color: #293264;
+  margin-bottom: 12px;
+  font-size: 24px;
+
+  @media (min-width: 700px) {
+    font-size: 32px;
+  }
+}
+
+.answersContainer {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.answerBtn,
+.clickedBtn,
+.mutedBtn,
+.wrongBtn,
+.rightBtn {
+  padding: 4px 15px;
+  background-color: transparent;
+  border: 1px solid #4d5b9e;
+  color: #293264;
+  font-family: inherit;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+
+  @media (min-width: 700px) {
+    font-size: 18px;
+  }
+}
+
+.clickedBtn {
+  border: 1px solid #d6dbf5;
+  background-color: #d6dbf5;
+}
+
+.mutedBtn {
+  border: 1px solid rgba(77, 91, 158, 0.5); /* 50% opacity border */
+  color: rgba(41, 50, 100, 0.5); /* 50% opacity color */
+}
+
+.wrongBtn {
+  background-color: #f8bcbc;
+  border: 1px solid #f8bcbc;
+  color: rgba(41, 50, 100, 0.5); /* 50% opacity color */
+}
+
+.rightBtn {
+  border: 1px solid #94d7a2;
+  background-color: #94d7a2;
+}
+
+.divider {
+  background-color: #dbdef0;
+  height: 1px;
+  margin-bottom: 14px;
+}
+
+.checkBtn,
+.playAgainBtn {
+  color: #f5f7fb;
+  font-weight: inherit;
+  font-weight: 600;
+  background-color: #4d5b9e;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: 700px) {
+    font-size: 16px;
+    padding: 14px 24px;
+  }
+}
+
+.resultContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.resultText {
+  font-weight: 700;
+  color: #293264;
+  font-size: 16px;
+
+  @media (min-width: 700px) {
+    font-size: 22px;
+  }
+}
+
+.loader {
+  text-align: center;
+  color: #293264;
+}
