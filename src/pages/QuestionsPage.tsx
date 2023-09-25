@@ -16,16 +16,16 @@ const QuestionsPage = () => {
   const dispatch = useAppDispatch();
 
   const handleAnswer = (answer: string, questionID: string) => {
-    dispatch(() => dispatch(setAnswer({ answer, questionID })));
+    dispatch(setAnswer({ answer, questionID }));
   };
 
   const handleCheckAnswers = () => {
-    dispatch(() => dispatch(checkAnswers()));
+    dispatch(checkAnswers());
   };
 
   const handleNewGame = () => {
     dispatch(fetchQuestions());
-    dispatch(() => dispatch(startNewGame()));
+    dispatch(startNewGame());
   };
 
   const width = useWindowWidth();

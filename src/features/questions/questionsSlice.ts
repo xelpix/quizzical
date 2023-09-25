@@ -13,7 +13,7 @@ type ReceivedDataType = {
   difficulty: string;
   incorrect_answers: string[];
   question: string;
-  typ: string;
+  type: string;
 };
 
 type FormattedDataType = {
